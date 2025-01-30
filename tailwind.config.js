@@ -16,12 +16,13 @@ module.exports = {
                 '32': '32px',
             },
             colors: {
-                txtBlack: "#2E2E2E",
-                txtLight: "#93A27C",
+                txtNavbar: "#2F2F2F",
+                txtTitle: "#2E2E2E",
+                txtOlive: "#93A27C",
                 txtLightBrown: "#B89776",
             },
             backgroundImage: {
-                'bg-icons': "url('../public/bg-icon-200.png')",
+                'hero-bg': "url('../public/hero-section-bg.jpg')",
             },
         },
     },
