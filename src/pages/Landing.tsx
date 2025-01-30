@@ -1,9 +1,16 @@
 import React from 'react';
+import HeroSection from "../components/sections/HeroSection";
+import AboutSection from "../components/sections/AboutSection";
+import CategoriesSection from "../components/sections/CategoriesSection";
+import RecommendedSection from "../components/sections/RecommendedSection";
 
 const Landing = () => {
     return (
         <div>
-            Landing
+            <HeroSection />
+            <AboutSection />
+            <CategoriesSection />
+            <RecommendedSection />
         </div>
     );
 };
