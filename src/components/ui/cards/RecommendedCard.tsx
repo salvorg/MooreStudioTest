@@ -1,5 +1,6 @@
 import React from 'react';
 import LandingButton from "../buttons/LandingButton";
+import CardCounter from "../counter/CardCounter";
 
 interface Props {
     image: string;
@@ -8,7 +9,7 @@ interface Props {
     price: number;
 }
 
-const RecommendedCard: React.FC<Props> = ({ image, description, weight, price }) => {
+const RecommendedCard: React.FC<Props> = ({image, description, weight, price}) => {
     return (
         <div className="w-[290px] h-[420px] p-4 rounded-xl bg-white">
             <div
@@ -18,7 +19,10 @@ const RecommendedCard: React.FC<Props> = ({ image, description, weight, price })
             </div>
             <p className="mt-4 text-base text-black font-semibold">{description}</p>
             <p className="mt-1 text-xs text-txtGrey">Вес: {weight} кг</p>
-            <p className="mt-2.5 text-xl font-bold">{price}с</p>
+            <div className="flex justify-between items-center text-txtOlive">
+                {price}
+                <CardCounter />
+            </div>
             <LandingButton className="w-[258px] border border-black mt-4">В корзину</LandingButton>
         </div>
     );
