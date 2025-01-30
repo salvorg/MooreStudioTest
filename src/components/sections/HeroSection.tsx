@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Header from "../Header/Header";
 import LandingTitle from "../ui/LandingTitle";
-import LandingButton from "../ui/buttons/LandingButton";
 
 const HeroSection = () => {
     const [inputText, setInputText] = useState<string>('');
