@@ -1,9 +1,10 @@
 import React from 'react';
+import Landing from "./pages/Landing";
 
 function App() {
   return (
-    <div className="min-h-screen font-montserrat bg-white relative">
-      app
+    <div className="min-h-screen bg-white relative">
+      <Landing />
     </div>
   );
 }
