@@ -3,6 +3,7 @@ import LandingTitle from "../ui/LandingTitle";
 import RecommendedCard from "../ui/cards/RecommendedCard";
 import {recommended} from "../../constants";
 import LandingButton from "../ui/buttons/LandingButton";
+import Pagination from "../ui/pagination/Pagination";
 
 const RecommendedSection = () => {
     return (
@@ -23,6 +24,9 @@ const RecommendedSection = () => {
                             price={card.price}
                         />
                     ))}
+                </div>
+                <div className="flex justify-center mt-8">
+                    <Pagination/>
                 </div>
             </div>
         </div>
