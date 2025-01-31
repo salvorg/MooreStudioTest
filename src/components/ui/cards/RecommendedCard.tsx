@@ -23,7 +23,7 @@ const RecommendedCard: React.FC<Props> = ({image, description, weight, price}) =
                 {price}
                 <CardCounter />
             </div>
-            <LandingButton className="w-[258px] border border-black mt-4">В корзину</LandingButton>
+            <LandingButton className="w-[258px] border border-borderGrey mt-4">В корзину</LandingButton>
         </div>
     );
 };
